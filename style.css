@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 350px;
+    max-width: 100%;
+    background-image: linear-gradient(135deg, #2495b3, #5cbdd4);
+    border-radius: 5px
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-input {
+    margin: 20px auto;
+    height: 25px;
+    width: 230px;
+    max-width: 100%;
+    position: relative;
+    border-bottom: 1px solid white;
+    padding: 14px;
+}
+
+.main-input--search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    z-index: 1;
+    color: white;
+}
+
+.main-input--voice {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: white;
+}
+
+.main-input--voice ion-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.main-input--voice ion-icon:nth-child(2) {
+    display: none;
+}
+
+.main-input--voice.recording ion-icon:first-child {
+    display: none;
+}
+
+.main-input--voice.recording ion-icon:nth-child(2) {
+    display: block;
+}
+
+
+.main-input--search ion-icon {
+    margin-bottom: -3px;
+}
+
+#main-input--search_box {
+    position: absolute;
+    inset: 0;
+    padding-left: 28px;
+    padding-right: 28px;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-family: inherit;
+    font-size: 1.6rem;
+}
+
+#main-input--search_box::placeholder {
+    font-family: inherit;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.main-info {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-bottom: 1.2px solid white;
+}
+
+.main-info--city_name {
+    font-size: 2rem;
+    margin-bottom: 6px;
+}
+
+.main-info--weather_state {
+    font-size: 1.6rem;
+}
+
+.main-info--weather_img {
+    width: 100px;
+    height: 100px;
+}
+
+.main-info--weather_temperature {
+    font-size: 6rem;
+    font-weight: lighter;
+    position: relative;
+    padding: 0 15px;
+}
+
+.main-info--weather_temperature::before {
+    content: 'o';
+    position: absolute;
+    font-size: 2rem;
+    top: 0;
+    right: 0;
+    font-weight: normal;
+}
+
+.second {
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.second .row {
+    display: flex;
+}
+
+.second .row + .row {
+    margin-top: 5px;
+}
+
+.second .item {
+    width: 50%;
+}
+
+.second .label {
+    font-weight: 600;
+}
