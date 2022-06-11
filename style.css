@@ -90,10 +90,12 @@ body {
 
 #main-input--search_box {
     -webkit-appearance: none;
-    appearance: none;
-    position: absolute;
-    inset: 0;
     padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     padding-left: 28px;
     padding-right: 28px;
     border: none;
