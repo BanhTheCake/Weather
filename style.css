@@ -89,6 +89,8 @@ body {
 }
 
 #main-input--search_box {
+    -webkit-appearance: none;
+    appearance: none;
     position: absolute;
     inset: 0;
     padding-left: 28px;
