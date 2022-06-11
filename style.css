@@ -93,6 +93,7 @@ body {
     appearance: none;
     position: absolute;
     inset: 0;
+    padding: 0;
     padding-left: 28px;
     padding-right: 28px;
     border: none;
